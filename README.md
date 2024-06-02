@@ -7,7 +7,32 @@
 * 实现两种运行方式：cahce-线程数量可变、fixed-线程数量固定
 
 ## 使用方式
+
+* 只作测试/学习则可直接编译运行
+
 * 依据Task接口实现自己的任务类，class MyTask : public Task
+* 修改main函数测试代码
 
 ## 运行
-编译：
+
+### 我的编译环境
+
+* OS：Deepin23
+* Linux内核版本：6.1.32-amd64-desktop-hwe
+* g++版本：13.2.0
+
+### 编译
+
+```shell
+mkdir build
+cd build
+cmake .
+make
+```
+
+### 运行
+
+```c++
+./threadPool.out
+```
+
